@@ -1,0 +1,187 @@
+/* --- Reset e Variáveis --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg-color: #ffeef2; /* Rosa pastel suave */
+    --text-color: #4a4a4a;
+    --primary-color: #ff4d6d; /* Vermelho/Rosa romântico */
+    --primary-hover: #ff758f;
+    --secondary-color: #6c757d;
+    --secondary-hover: #5a6268;
+    --card-bg: #ffffff;
+    --shadow: 0 8px 24px rgba(255, 77, 109, 0.15);
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* --- Container Principal (Card) --- */
+.container {
+    background-color: var(--card-bg);
+    padding: 40px 30px;
+    border-radius: 20px;
+    box-shadow: var(--shadow);
+    text-align: center;
+    width: 100%;
+    max-width: 500px;
+}
+
+h1 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+p {
+    font-size: 1rem;
+    color: #777;
+    margin-bottom: 30px;
+}
+
+/* --- Botões --- */
+.btn-group {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.btn {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn:active {
+    transform: scale(0.95);
+}
+
+.btn-sim {
+    background-color: var(--primary-color);
+    color: white;
+    box-shadow: 0 4px 12px rgba(255, 77, 109, 0.3);
+}
+
+.btn-sim:hover {
+    background-color: var(--primary-hover);
+    transform: translateY(-2px);
+}
+
+.btn-nao {
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+.btn-nao:hover {
+    background-color: var(--secondary-hover);
+    transform: translateY(-2px);
+}
+
+.btn-block {
+    width: 100%;
+    margin-top: 10px;
+}
+
+/* --- Formulário --- */
+.form-control {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.form-control label {
+    display: block;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 6px;
+    color: #555;
+}
+
+.form-control input,
+.form-control textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 2px solid #f0f0f0;
+    border-radius: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.95rem;
+    color: var(--text-color);
+    outline: none;
+    transition: border-color 0.2s ease;
+}
+
+.form-control input:focus,
+.form-control textarea:focus {
+    border-color: var(--primary-color);
+}
+
+/* --- Resumo de Sucesso --- */
+.hidden {
+    display: none;
+}
+
+.resumo-box {
+    background-color: #fff5f7;
+    border: 2px dashed var(--primary-color);
+    border-radius: 12px;
+    padding: 20px;
+    margin-top: 20px;
+    text-align: left;
+}
+
+.resumo-box p {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.resumo-box p:last-child {
+    margin-bottom: 0;
+}
+
+/* --- Animações --- */
+.fade-in {
+    animation: fadeIn 0.6s ease-out forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* --- Responsividade --- */
+@media (max-width: 480px) {
+    .container {
+        padding: 30px 20px;
+    }
+    
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .btn {
+        width: 100%; /* Botões empilham no mobile */
+    }
+}
