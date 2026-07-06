@@ -61,7 +61,9 @@ git clone <url-do-repositorio>
 
 2. Acesse a pasta do projeto.
 
-3. Abra o arquivo `index.html` em qualquer navegador moderno.
+3. Coloque o id de um forms do Formspree.
+
+4. Abra o arquivo `index.html` em qualquer navegador moderno.
 
 Não é necessário instalar dependências ou executar um servidor.
 
