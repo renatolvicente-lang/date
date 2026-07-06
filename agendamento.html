@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marcar Encontro ❤️</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <main class="container fade-in">
+        <div id="form-card">
+            <h1>Perfeito! Vamos marcar nosso encontro ❤️</h1>
+            
+            <form id="form-encontro">
+                <div class="form-control">
+                    <label for="data">Data</label>
+                    <input type="date" id="data" required>
+                </div>
+
+                <div class="form-control">
+                    <label for="horario">Horário</label>
+                    <input type="time" id="horario" required>
+                </div>
+
+                <div class="form-control">
+                    <label for="local">Local</label>
+                    <input type="text" id="local" placeholder="Ex.: Shopping, Parque, Restaurante..." required>
+                </div>
+
+                <div class="form-control">
+                    <label for="observacoes">Observações</label>
+                    <textarea id="observacoes" rows="3" placeholder="Alguma ideia especial?"></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-sim btn-block">Confirmar Encontro ❤️</button>
+            </form>
+        </div>
+
+        <div id="sucesso-card" class="hidden">
+            <h1>Encontro marcado! Mal posso esperar ❤️</h1>
+            <div class="resumo-box">
+                <p><strong>📅 Data:</strong> <span id="resumo-data"></span></p>
+                <p><strong>⏰ Horário:</strong> <span id="resumo-horario"></span></p>
+                <p><strong>📍 Local:</strong> <span id="resumo-local"></span></p>
+                <p><strong>💡 Obs:</strong> <span id="resumo-obs"></span></p>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/agendamento.js"></script>
+</body>
+</html>
