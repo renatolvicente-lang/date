@@ -43,7 +43,7 @@ Após o envio, os dados são apresentados na própria página em uma mensagem de
 └── assets/
 ```
 
-## 💻 Desenvolvimento
+## Desenvolvimento
 
 O projeto foi desenvolvido utilizando apenas tecnologias nativas da web, sem o uso de frameworks ou bibliotecas externas para a lógica da aplicação. A estrutura foi organizada separando HTML, CSS e JavaScript em arquivos distintos, facilitando a manutenção e a organização do código.
 
