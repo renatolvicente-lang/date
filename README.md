@@ -1,14 +1,14 @@
-# ❤️ Convite para Sair
+#  Convite para Sair
 
 Um site simples, responsivo e interativo desenvolvido com **HTML, CSS e JavaScript puro**, criado com o objetivo de proporcionar uma experiência divertida ao convidar alguém para sair.
 
-## 📖 Sobre o projeto
+## Sobre o projeto
 
 O projeto consiste em uma pequena aplicação web composta por duas páginas. Na primeira, o usuário recebe um convite para sair e pode responder entre as opções **"Sim"** ou **"Não"**. Caso escolha **"Não"**, o site exibe uma sequência de mensagens de confirmação em tom descontraído antes de manter o usuário na página inicial. Ao selecionar **"Sim"**, o usuário é direcionado para uma segunda página, onde pode informar a data, o horário, o local e observações sobre o encontro por meio de um formulário.
 
 Após o envio, os dados são apresentados na própria página em uma mensagem de confirmação, sem necessidade de recarregar o navegador ou utilizar banco de dados.
 
-## 🚀 Funcionalidades
+## Funcionalidades
 
 * Página inicial com convite interativo.
 * Botões de resposta "Sim" e "Não".
@@ -24,13 +24,13 @@ Após o envio, os dados são apresentados na própria página em uma mensagem de
 * Layout responsivo para computadores, tablets e smartphones.
 * Interface moderna com animações suaves.
 
-## 🛠️ Tecnologias utilizadas
+## Tecnologias utilizadas
 
 * HTML5
 * CSS3
 * JavaScript (ES6)
 
-## 📁 Estrutura do projeto
+## Estrutura do projeto
 
 ```text
 ├── index.html
@@ -51,7 +51,7 @@ Durante o desenvolvimento, foi priorizada a criação de uma interface simples, 
 
 O formulário da página de agendamento foi implementado com validação básica e manipulação do DOM para exibir os dados informados pelo usuário sem recarregar a página.
 
-## ▶️ Como executar
+## Como executar
 
 1. Clone este repositório:
 
@@ -67,10 +67,10 @@ git clone <url-do-repositorio>
 
 Não é necessário instalar dependências ou executar um servidor.
 
-## 🎯 Objetivo
+## Objetivo
 
 Este projeto foi desenvolvido com fins de aprendizado, praticando conceitos de desenvolvimento front-end, manipulação do DOM, eventos em JavaScript, organização de arquivos e criação de interfaces responsivas.
 
-## 📄 Licença
+## Licença
 
 Este projeto está disponível para fins de estudo e aprendizado.
