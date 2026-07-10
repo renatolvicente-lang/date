@@ -27,6 +27,10 @@ body {
     padding: 20px;
 }
 
+.gato_triste{
+    width: 280px;
+    border-radius: 20px;
+}
 /* --- Container Principal (Card) --- */
 .container {
     background-color: var(--card-bg);

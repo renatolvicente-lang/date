@@ -19,4 +19,6 @@ btnNao.addEventListener('click', () => {
 
     // Dispara um alert para cada frase da lista
     mensagens.forEach(msg => alert(msg));
+
+    window.location.href = 'btnNao.html';
 });
