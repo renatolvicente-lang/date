@@ -25,11 +25,6 @@ btnNao.addEventListener('click', () => {
         }
     }
 
-    // Última chance (pergunta direta)
-    // Se clicar em OK (Sim), aceitou sair
-    if (confirm("Última chance... aceita sair comigo? ❤️")) {
-        window.location.href = 'agendamento.html'; // Muda para a página do "SIM"
-    } else {
-        window.location.href = 'btnNao.html'; // Se recusar até o fim, vai para a página do "NÃO"
-    }
+    // Se a pessoa não mudar de ideia, vai para a página do "NÃO"
+    window.location.href = 'btnNao.html';
 });
