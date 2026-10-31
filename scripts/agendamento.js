@@ -22,14 +22,14 @@ form.addEventListener('submit', async (e) => {
         const data = await response.json();
 
         if (response.ok) {
-            alert("Success! Your message has been sent.");
+            alert("Encontro marcado com sucesso! ❤️");
             form.reset();
         } else {
             alert("Error: " + data.message);
         }
 
     } catch (error) {
-        alert("Something went wrong. Please try again.");
+        alert("Algo deu errado, Tenta denovo ai hehe.");
     } finally {
         submitBtn.textContent = originalText;
         submitBtn.disabled = false;
