@@ -4,7 +4,7 @@ const btnNao = document.getElementById('btn-nao');
 
 // Ação ao clicar no botão "Sim" -> Redireciona para o agendamento
 btnSim.addEventListener('click', () => {
-    window.location.href = '../public/agendamento.html';
+    window.location.href = 'agendamento.html';
 });
 
 // Ação ao clicar no botão "Não" -> Sequência de diálogos
@@ -20,5 +20,5 @@ btnNao.addEventListener('click', () => {
     // Dispara um alert para cada frase da lista
     mensagens.forEach(msg => confirm(msg));
 
-    window.location.href = '../public/btnNao.html';
+    window.location.href = 'btnNao.html';
 });
