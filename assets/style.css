@@ -6,14 +6,17 @@
 }
 
 :root {
-    --bg-color: #ffeef2; /* Rosa pastel suave */
-    --text-color: #4a4a4a;
-    --primary-color: #ff4d6d; /* Vermelho/Rosa romântico */
-    --primary-hover: #ff758f;
-    --secondary-color: #6c757d;
-    --secondary-hover: #5a6268;
-    --card-bg: #ffffff;
-    --shadow: 0 8px 24px rgba(255, 77, 109, 0.15);
+    --bg-color: #fff1f2;
+    --text-color: #3f2023;
+    --muted-color: #76565a;
+    --primary-color: #b4232f;
+    --primary-hover: #921b26;
+    --secondary-color: #87434a;
+    --secondary-hover: #6f343b;
+    --card-bg: #fffafa;
+    --border-color: #ecd5d7;
+    --summary-bg: #fcebed;
+    --shadow: 0 8px 24px rgba(151, 29, 42, 0.15);
 }
 
 body {
@@ -44,14 +47,14 @@ body {
 
 h1 {
     font-size: 1.8rem;
-    color: #333;
+    color: var(--text-color);
     margin-bottom: 10px;
     font-weight: 700;
 }
 
 p {
     font-size: 1rem;
-    color: #777;
+    color: var(--muted-color);
     margin-bottom: 30px;
 }
 
@@ -82,7 +85,7 @@ p {
 .btn-sim {
     background-color: var(--primary-color);
     color: white;
-    box-shadow: 0 4px 12px rgba(255, 77, 109, 0.3);
+    box-shadow: 0 4px 12px rgba(151, 29, 42, 0.3);
 }
 
 .btn-sim:hover {
@@ -123,14 +126,14 @@ p {
     font-size: 0.9rem;
     font-weight: 600;
     margin-bottom: 6px;
-    color: #555;
+    color: var(--text-color);
 }
 
 .form-control input,
 .form-control textarea {
     width: 100%;
     padding: 12px 15px;
-    border: 2px solid #f0f0f0;
+    border: 2px solid var(--border-color);
     border-radius: 10px;
     font-family: 'Poppins', sans-serif;
     font-size: 0.95rem;
@@ -150,7 +153,7 @@ p {
 }
 
 .resumo-box {
-    background-color: #fff5f7;
+    background-color: var(--summary-bg);
     border: 2px dashed var(--primary-color);
     border-radius: 12px;
     padding: 20px;
@@ -160,7 +163,7 @@ p {
 
 .resumo-box p {
     margin-bottom: 10px;
-    color: #333;
+    color: var(--text-color);
 }
 
 .resumo-box p:last-child {
