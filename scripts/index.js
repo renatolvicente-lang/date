@@ -17,8 +17,19 @@ btnNao.addEventListener('click', () => {
         "Última chance... aceita sair comigo? ❤️"
     ];
 
-    // Dispara um alert para cada frase da lista
-    mensagens.forEach(msg => confirm(msg));
+    for (const msg of mensagens) {
+        // Se a pessoa clicar em "Cancelar" (Não), significa que ela mudou de ideia!
+        if (!confirm(msg)) {
+            window.location.href = 'agendamento.html'; // Redireciona para a página do "SIM"
+            return; // Para o código aqui e não mostra as próximas perguntas
+        }
+    }
 
-    window.location.href = 'btnNao.html';
+    // Última chance (pergunta direta)
+    // Se clicar em OK (Sim), aceitou sair
+    if (confirm("Última chance... aceita sair comigo? ❤️")) {
+        window.location.href = 'agendamento.html'; // Muda para a página do "SIM"
+    } else {
+        window.location.href = 'btnNao.html'; // Se recusar até o fim, vai para a página do "NÃO"
+    }
 });
