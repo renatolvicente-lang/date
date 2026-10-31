@@ -14,7 +14,6 @@ btnNao.addEventListener('click', () => {
         "Tem certeza? 🥺",
         "Pensa mais um pouquinho...",
         "É sua decisão final mesmo? 😭",
-        "Última chance... aceita sair comigo? ❤️"
     ];
 
     for (const msg of mensagens) {
