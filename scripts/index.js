@@ -19,7 +19,7 @@ btnNao.addEventListener('click', () => {
 
     for (const msg of mensagens) {
         // Se a pessoa clicar em "Cancelar" (Não), significa que ela mudou de ideia!
-        if (!confirm(msg)) {
+        if (confirm(msg)) {
             window.location.href = 'agendamento.html'; // Redireciona para a página do "SIM"
             return; // Para o código aqui e não mostra as próximas perguntas
         }
