@@ -23,6 +23,7 @@ form.addEventListener('submit', async (e) => {
 
         if (response.ok) {
             alert("Encontro marcado com sucesso! ❤️");
+            window.location.href = "../deuCerto.html";
             form.reset();
         } else {
             alert("Error: " + data.message);
